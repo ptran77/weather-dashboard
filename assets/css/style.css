@@ -1,0 +1,36 @@
+h1 {
+  background-image: linear-gradient(to right,#3b6cc2,#230555);
+}
+
+/* Search Section Style Begin */
+.search-city {
+  font-size: 15px;
+}
+
+.search-history {
+  border-top: solid 2px #7a7a7a;
+}
+/* Search Section Style End */
+
+/* Weather Info Section Style Begin */
+.current-day-info {
+  border: solid 2px #8c8c8c;
+}
+
+.temp, .wind, .humidity, .UV {
+  font-size: 20px;
+}
+
+.UV {
+  display: flex;
+}
+
+.forecast-info {
+  width: 20%;
+  background-color: #33475a;
+  padding: 5px;
+}
+
+.forecast-temp, .forecast-wind, .forecast-humidity {
+  font-size: 18px;
+} 

@@ -14,66 +14,84 @@
 
   <body>
     <header>
-      <h1 class="text-center">Weather Dashboard</h1>
+      <h1 class="text-center font-weight-bold text-white pt-2 pb-4 my-1 mx-1">
+        Weather Dashboard
+      </h1>
     </header>
 
-    <main class="row">
+    <main class="row mx-1 my-4">
       <!-- Search Section -->
-      <section class="search col-3">
-        <h2>Search for a City:</h2>
-        <input type="text" name="city-name" placeholder="Enter City Name" />
-        <ul class="search-history"></ul>
+      <section class="search col-2">
+        <h2 class="font-weight-bold">Search for a City:</h2>
+        <input
+          class="search-city w-100 py-1 px-1"
+          type="text"
+          name="city-name"
+          placeholder="Enter City Name"
+        />
+        <button
+          class="btn w-100 text-center bg-info font-weight-bold text-white mt-3"
+          type="button"
+        >
+          Search
+        </button>
+        <ul class="search-history mt-3"></ul>
       </section>
 
       <!-- Weather Info Section-->
-      <section class="weather-info col-9">
+      <section class="weather-info col-10">
         <!-- Current Day Info section-->
-        <div class="current-day-info">
-          <h2 class="city-name">City Name (Current Day)</h2>
-          <div class="temp">Temp:</div>
-          <div class="wind">Wind:</div>
-          <div class="humidity">Humidity</div>
-          <div class="UV">UV Index:</div>
+        <div class="current-day-info w-100 py-3 px-2 mb-4">
+          <h2 class="city-name font-weight-bold">City Name (Current Day)</h2>
+          <div class="temp py-1">Temp:</div>
+          <div class="wind py-1">Wind:</div>
+          <div class="humidity py-1">Humidity:</div>
+          <div class="UV py-1">
+            <div>UV Index:</div>
+            <div class="UV-index px-2 ml-2 text-white bg-success rounded">
+              0.47
+            </div>
+          </div>
         </div>
 
-        <h3>5-Day Forcast:</h3>
+        <h3 class="font-weight-bold mb-3">5-Day Forcast:</h3>
         <!-- 5-Day Forecast Info Section-->
         <div class="5-day-forecast">
           <div class="5-day-forecast-info d-flex">
-            <div class="forecast-info">
-              <h4>Day 1</h4>
-              <div class="forecast-icon">Icon</div>
-              <div class="forecast-temp">Temp:</div>
-              <div class="forecast-wind">Wind:</div>
-              <div class="forecast-humidity">Humidity:</div>
+            <div class="forecast-info text-white rounded border-dark mr-5">
+              <h4 class="text-white">Day 1</h4>
+              <div class="forecast-icon py-1">Icon</div>
+              <div class="forecast-temp py-1">Temp:</div>
+              <div class="forecast-wind py-1">Wind:</div>
+              <div class="forecast-humidity py-1">Humidity:</div>
             </div>
-            <div class="forecast-info">
+            <div class="forecast-info text-white rounded border-dark mr-5">
               <h4>Day 2</h4>
-              <div class="forecast-icon">Icon</div>
-              <div class="forecast-temp">Temp:</div>
-              <div class="forecast-wind">Wind:</div>
-              <div class="forecast-humidity">Humidity:</div>
+              <div class="forecast-icon py-1">Icon</div>
+              <div class="forecast-temp py-1">Temp:</div>
+              <div class="forecast-wind py-1">Wind:</div>
+              <div class="forecast-humidity py-1">Humidity:</div>
             </div>
-            <div class="forecast-info">
+            <div class="forecast-info text-white rounded border-dark mr-5">
               <h4>Day 3</h4>
-              <div class="forecast-icon">Icon</div>
-              <div class="forecast-temp">Temp:</div>
-              <div class="forecast-wind">Wind:</div>
-              <div class="forecast-humidity">Humidity:</div>
+              <div class="forecast-icon py-1">Icon</div>
+              <div class="forecast-temp py-1">Temp:</div>
+              <div class="forecast-wind py-1">Wind:</div>
+              <div class="forecast-humidity py-1">Humidity:</div>
             </div>
-            <div class="forecast-info">
+            <div class="forecast-info text-white rounded border-dark mr-5">
               <h4>Day 4</h4>
-              <div class="forecast-icon">Icon</div>
-              <div class="forecast-temp">Temp:</div>
-              <div class="forecast-wind">Wind:</div>
-              <div class="forecast-humidity">Humidity:</div>
+              <div class="forecast-icon py-1">Icon</div>
+              <div class="forecast-temp py-1">Temp:</div>
+              <div class="forecast-wind py-1">Wind:</div>
+              <div class="forecast-humidity py-1">Humidity:</div>
             </div>
-            <div class="forecast-info">
+            <div class="forecast-info text-white rounded border-dark">
               <h4>Day 5</h4>
-              <div class="forecast-icon">Icon</div>
-              <div class="forecast-temp">Temp:</div>
-              <div class="forecast-wind">Wind:</div>
-              <div class="forecast-humidity">Humidity:</div>
+              <div class="forecast-icon py-1">Icon</div>
+              <div class="forecast-temp py-1">Temp:</div>
+              <div class="forecast-wind py-1">Wind:</div>
+              <div class="forecast-humidity py-1">Humidity:</div>
             </div>
           </div>
         </div>
