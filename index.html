@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>Weather Dashboard</title>
+  </head>
+
+  <body>
+    <header>
+      <h1 class="text-center">Weather Dashboard</h1>
+    </header>
+
+    <main class="row">
+      <!-- Search Section -->
+      <section class="search col-3">
+        <h2>Search for a City:</h2>
+        <input type="text" name="city-name" placeholder="Enter City Name" />
+        <ul class="search-history"></ul>
+      </section>
+
+      <!-- Weather Info Section-->
+      <section class="weather-info col-9">
+        <!-- Current Day Info section-->
+        <div class="current-day-info">
+          <h2 class="city-name">City Name (Current Day)</h2>
+          <div class="temp">Temp:</div>
+          <div class="wind">Wind:</div>
+          <div class="humidity">Humidity</div>
+          <div class="UV">UV Index:</div>
+        </div>
+
+        <h3>5-Day Forcast:</h3>
+        <!-- 5-Day Forecast Info Section-->
+        <div class="5-day-forecast">
+          <div class="5-day-forecast-info d-flex">
+            <div class="forecast-info">
+              <h4>Day 1</h4>
+              <div class="forecast-icon">Icon</div>
+              <div class="forecast-temp">Temp:</div>
+              <div class="forecast-wind">Wind:</div>
+              <div class="forecast-humidity">Humidity:</div>
+            </div>
+            <div class="forecast-info">
+              <h4>Day 2</h4>
+              <div class="forecast-icon">Icon</div>
+              <div class="forecast-temp">Temp:</div>
+              <div class="forecast-wind">Wind:</div>
+              <div class="forecast-humidity">Humidity:</div>
+            </div>
+            <div class="forecast-info">
+              <h4>Day 3</h4>
+              <div class="forecast-icon">Icon</div>
+              <div class="forecast-temp">Temp:</div>
+              <div class="forecast-wind">Wind:</div>
+              <div class="forecast-humidity">Humidity:</div>
+            </div>
+            <div class="forecast-info">
+              <h4>Day 4</h4>
+              <div class="forecast-icon">Icon</div>
+              <div class="forecast-temp">Temp:</div>
+              <div class="forecast-wind">Wind:</div>
+              <div class="forecast-humidity">Humidity:</div>
+            </div>
+            <div class="forecast-info">
+              <h4>Day 5</h4>
+              <div class="forecast-icon">Icon</div>
+              <div class="forecast-temp">Temp:</div>
+              <div class="forecast-wind">Wind:</div>
+              <div class="forecast-humidity">Humidity:</div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>
