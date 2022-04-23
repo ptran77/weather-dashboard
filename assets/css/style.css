@@ -3,12 +3,16 @@ h1 {
 }
 
 /* Search Section Style Begin */
-.search-city {
+#search-city {
   font-size: 15px;
 }
 
-.search-history {
+#search-history {
   border-top: solid 2px #7a7a7a;
+}
+
+.search-history-item {
+  background-color: #b7b7b7;
 }
 /* Search Section Style End */
 
