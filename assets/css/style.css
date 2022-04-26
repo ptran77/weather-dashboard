@@ -2,6 +2,10 @@ h1 {
   background-image: linear-gradient(to right,#3b6cc2,#230555);
 }
 
+.display-off {
+  display: none;
+}
+
 /* Search Section Style Begin */
 #search-city {
   font-size: 15px;
@@ -17,6 +21,7 @@ h1 {
 /* Search Section Style End */
 
 /* Weather Info Section Style Begin */
+
 .current-day-info {
   border: solid 2px #8c8c8c;
 }
@@ -29,6 +34,18 @@ h1 {
   display: flex;
 }
 
+.favorable {
+  background-color: #157e51;
+}
+
+.moderate {
+  background-color: #8B8000;
+}
+
+.severe {
+  background-color: red;
+}
+
 .forecast-info {
   width: 20%;
   background-color: #33475a;
@@ -38,3 +55,4 @@ h1 {
 .forecast-temp, .forecast-wind, .forecast-humidity {
   font-size: 18px;
 } 
+/* Weather Info Section Style End */
