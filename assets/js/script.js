@@ -33,10 +33,6 @@ let getLocationInfo = function(cityName) {
         // match found
         if(data.length === 1) {
           addSearchHistoryItem(data[0].name);
-          
-          // Saving search history to local Storage
-          searchCities.push(data[0].name);
-          localStorage.setItem('cities',JSON.stringify(searchCities));
 
           currentDayInfo.eq(0).find("h2").text(data[0].name + " (" + moment().format("l") + ")");
           let lat = data[0]["lat"];
@@ -59,6 +55,19 @@ let getLocationInfo = function(cityName) {
 // function to add new search history item
 let addSearchHistoryItem = function(cityName) {
   searchHistory.removeClass("display-off");
+  
+  // check if there already a search history with the cityname
+  // if there is already one, return
+  for(let i = 0; i < $(".search-history-item").length; i++) {
+    if($(".search-history-item").eq(i).text() == cityName) {
+      return;
+    }
+  }
+
+  // Saving search history to local Storage
+  searchCities.push(cityName);
+  localStorage.setItem('cities',JSON.stringify(searchCities));
+
   // Make search history item
   let searchHistoryItem = document.createElement("div");
   searchHistoryItem.textContent = cityName;
