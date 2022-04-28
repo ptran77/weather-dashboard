@@ -26,7 +26,7 @@ let getCity = function() {
 // function to get location informaton
 let getLocationInfo = function(cityName) {
   // make api call to get longitude and latitude position of the city
-  let apiUrl = "http://api.openweathermap.org/geo/1.0/direct?q=" + cityName + "&limit=1&appid=" + apiKey;
+  let apiUrl = "https://api.openweathermap.org/geo/1.0/direct?q=" + cityName + "&limit=1&appid=" + apiKey;
   fetch(apiUrl).then(function (response) {
     if(response.ok) {
       response.json().then(function (data) {
@@ -152,7 +152,7 @@ searchHistory.on("click",".search-history-item", function(){
   currentDayInfo.eq(0).find("h2").text($(this).text() + " (" + moment().format("l") + ")");
 
   // get latitude and longitude coodinates and use them to call getWeatherInfo
-  let apiUrl = "http://api.openweathermap.org/geo/1.0/direct?q=" + $(this).text() + "&limit=1&appid=" + apiKey;
+  let apiUrl = "https://api.openweathermap.org/geo/1.0/direct?q=" + $(this).text() + "&limit=1&appid=" + apiKey;
   fetch(apiUrl).then(function (response) {
     if(response.ok) {
       response.json().then(function (data) {
