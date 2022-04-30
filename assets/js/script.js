@@ -95,7 +95,7 @@ let getWeatherInfo = function(lat,lon) {
         let currentWeatherIcon = document.createElement("img");
         currentWeatherIcon.setAttribute("alt","Weather Icon");
         let iconcode = data.current.weather[0].icon;
-        let iconurl = "http://openweathermap.org/img/w/" + iconcode + ".png";
+        let iconurl = "https://openweathermap.org/img/w/" + iconcode + ".png";
         currentWeatherIcon.setAttribute('src', iconurl);
         currentDayInfo.eq(0).find("h2").append(currentWeatherIcon);
 
