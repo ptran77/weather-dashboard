@@ -89,7 +89,6 @@ let getWeatherInfo = function(lat,lon) {
   fetch(apiUrl).then(function (response) {
     if(response.ok) {
       response.json().then(function (data) {
-        console.log(data);
         // Putting in current day info
 
         // Weather Icon 
@@ -131,7 +130,7 @@ let getWeatherInfo = function(lat,lon) {
 
           // Weather Icon
           let iconcode = data.daily[i+1].weather[0].icon;
-          let iconurl = "http://openweathermap.org/img/w/" + iconcode + ".png";
+          let iconurl = "https://openweathermap.org/img/w/" + iconcode + ".png";
           forecastInfo.eq(i).find(".forecast-icon").attr('src', iconurl);
 
           // Temperature, Wind, Humidity
