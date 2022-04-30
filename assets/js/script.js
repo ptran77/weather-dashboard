@@ -20,6 +20,7 @@ let getCity = function() {
     return;
   }
   let cityName = searchCity.val();
+  searchCity.val('');
   getLocationInfo(cityName);
 }
 
